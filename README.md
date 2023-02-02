@@ -3,7 +3,7 @@ Yihong Xu, Keith A. Brown ...
 
 ### Contact: Yihong Xu (yihongxu at bu dot edu)
 
-![alt text](https://github.com/yihonglilyxu/KspaceMRIBO/KspaceMRIBO_pipeline.png)
+![alt text](https://github.com/yihonglilyxu/blob/main/KspaceMRIBO/KspaceMRIBO_pipeline.png)
 
 --- 
 # Abstract: 
