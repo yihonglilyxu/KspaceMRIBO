@@ -1,6 +1,8 @@
 # K-space Reconstruction of MR Images using Bayesian Methods
 Yihong Xu, Keith A. Brown ... 
-![alt text]([https://github.com/yihonglilyxu/blob/main/KspaceMRIBO/KspaceMRIBO_pipeline.png](https://github.com/yihonglilyxu/KspaceMRIBO/blob/main/KspaceMRIBO_pipeline.png))
+
+![alt text]([https://github.com/yihonglilyxu/blob/main/KspaceMRIBO/KspaceMRIBO_pipeline.png]
+
 ### Contact: Yihong Xu (yihongxu at bu dot edu)
 
 --- 
