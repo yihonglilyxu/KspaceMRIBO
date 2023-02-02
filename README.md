@@ -10,4 +10,4 @@ Yihong Xu, Keith A. Brown ...
 
 ## Dataset
 * download the IXI T1 dataset: 
-  https://paperswithcode.com/dataset/ixi-dataset
+  [https://paperswithcode.com/dataset/ixi-dataset](https://brain-development.org/ixi-dataset/)
