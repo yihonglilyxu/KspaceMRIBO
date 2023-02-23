@@ -10,5 +10,76 @@ Yihong Xu, Keith A. Brown ...
 ![alt text](https://github.com/yihonglilyxu/KspaceMRIBO/blob/main/KspaceMRIBO_pipeline.png)
 
 ## Dataset
-* download the IXI T1 dataset: 
+ Download the IXI T1 dataset: 
   [https://paperswithcode.com/dataset/ixi-dataset](https://brain-development.org/ixi-dataset/)
+##  Dictionaries and optimized sampling path 
+ 1. **Mean and Covariance Matrices:**
+  Final multivariate normal distributions can be downloaded through [[link](https://drive.google.com/drive/folders/1aArnrAfU8tZ0KAci09W5le4NTeI4UnUn?usp=share_link)]. After downloading the dictionaries, please put them into [ `src/GPR_dictionary/ `](src/GPR_dictionary/) folder. 
+ 2. **Optimal Circular Sampling Path:**
+[optimized circular sampling path for double develop function ](https://github.com/yihonglilyxu/KspaceMRIBO/blob/963f73001bd518aa722b47a180ebd4e5283fca13/src/Undersampled-Path/f2_6822_rpattern.npy)
+## Methods Illustration 
+This [jupyter notebook](https://github.com/facebookresearch/fastMRI/tree/master/fastMRI_tutorial.ipynb)  or contains a simple tutorial
+explaining how to preprocess the MR images, find the optimal sampling path and perform image reconstruction using BO methods. 
+
+## Testing your own MRI image  
+Download the repository from Gihub. The main package is under the src folder. Please check the [Prerequisite](#Prerequisites) section for dependency requirements. 
+
+Here we offer example input image data in [`src/MRI_data/`](src/MRI_data/) folder .
+
+ - ***Option 1: Reconstruction of  a single 2D axial MRI image***
+
+**input:** single MRI image in a 256*256 numpy array 
+
+**example:**
+ ```
+%run recon_h5_main.py --imgpath './MRI_data/example_img.npy'\
+
+--undersampled-path './Undersampled-Path/f2_6822_rpattern.npy' \
+
+--realcov-path './GPR_dictionary/realcov_L2_13.pt' \
+
+--imagcov-path './GPR_dictionary/imagcov_L2_13.pt' \
+
+--realmean-path './GPR_dictionary/train_realmean_6822.pt' \
+
+--imagmean-path './GPR_dictionary/train_imagmean_6822.pt' \
+
+--magmean-path './GPR_dictionary/train_magmean_6822.pt' \
+
+--out-dir './MRI_data/'
+```
+
+ - ***Option 2: Test a single 2D axial MRI image (Recommended!)***
+
+ **input:** k-space MRI images in an h5 file, for each k-space image, the size should be (256,256,2). The third dimension is for real and imaginary part of k-space 
+
+**example:**
+ ```
+%run recon_h5_main.py --imgpath './MRI_data/t1_test_example.h5' \
+
+--undersampled-path './Undersampled-Path/f2_6822_rpattern.npy' \
+
+--realcov-path './GPR_dictionary/realcov_L2_13.pt' \
+
+--imagcov-path './GPR_dictionary/imagcov_L2_13.pt' \
+
+--realmean-path './GPR_dictionary/train_realmean_6822.pt' \
+
+--imagmean-path './GPR_dictionary/train_imagmean_6822.pt' \
+
+--magmean-path './GPR_dictionary/train_magmean_6822.pt' \
+
+--out-dir './MRI_data/'
+```
+
+ - **Outputs**: reconstruction NMSE, SSIM and PSNR values and reconstructed MRI images. 
+ 
+
+### Prerequisites
+```
+torch~=1.11.0
+numpy~=1.22.3
+matplotlib~=3.4.1
+h5py~=3.2.1
+fastmri~=0.1.1
+```
