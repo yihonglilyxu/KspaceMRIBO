@@ -18,7 +18,7 @@ Yihong Xu, Keith A. Brown ...
  2. **Optimal Circular Sampling Path:**
 [optimized circular sampling path for double develop function ](https://github.com/yihonglilyxu/KspaceMRIBO/blob/963f73001bd518aa722b47a180ebd4e5283fca13/src/Undersampled-Path/f2_6822_rpattern.npy)
 ## Methods Illustration 
-This [jupyter notebook](https://github.com/facebookresearch/fastMRI/tree/master/fastMRI_tutorial.ipynb)  or contains a simple tutorial
+This [jupyter notebook](https://github.com/yihonglilyxu/KspaceMRIBO/blob/82773ffaf6fba382b6812e6f1a9c22c190249bdb/Methods_illustration.ipynb)  or contains a simple tutorial
 explaining how to preprocess the MR images, find the optimal sampling path and perform image reconstruction using BO methods. 
 
 ## Image reconstruction using your own MRI image  
