@@ -21,7 +21,7 @@ Yihong Xu, Keith A. Brown ...
 This [jupyter notebook](https://github.com/facebookresearch/fastMRI/tree/master/fastMRI_tutorial.ipynb)  or contains a simple tutorial
 explaining how to preprocess the MR images, find the optimal sampling path and perform image reconstruction using BO methods. 
 
-## Testing your own MRI image  
+## Image reconstruction using your own MRI image  
 Download the repository from Gihub. The main package is under the src folder. Please check the [Prerequisite](#Prerequisites) section for dependency requirements. 
 
 Here we offer example input image data in [`src/MRI_data/`](src/MRI_data/) folder .
