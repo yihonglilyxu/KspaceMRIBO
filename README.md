@@ -32,7 +32,7 @@ Here we offer example input image data in [`src/MRI_data/`](src/MRI_data/) folde
 
 **example:**
  ```
-%run recon_h5_main.py --imgpath './MRI_data/example_img.npy'\
+%run recon_single_main.py --imgpath './MRI_data/example_img.npy'\
 
 --undersampled-path './Undersampled-Path/f2_6822_rpattern.npy' \
 
