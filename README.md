@@ -49,7 +49,7 @@ Here we offer example input image data in [`src/MRI_data/`](src/MRI_data/) folde
 --out-dir './MRI_data/'
 ```
 
- - ***Option 2: Test a single 2D axial MRI image (Recommended!)***
+ - ***Option 2: Test multiple 2D axial MRI images (Recommended!)***
 
  **input:** k-space MRI images in an h5 file, for each k-space image, the size should be (256,256,2). The third dimension is for real and imaginary part of k-space 
 
