@@ -1,5 +1,5 @@
 # K-space Reconstruction of MR Images using Bayesian Methods
-Yihong Xu, Keith A. Brown ... 
+Yihong Xu, Chad W. Farris, Stephan W. Anderson, Xin Zhang, Keith A. Brown ... 
 
 ### Contact: Yihong Xu (yihongxu at bu dot edu)
 
