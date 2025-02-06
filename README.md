@@ -14,7 +14,7 @@ Yihong Xu, Chad W. Farris, Stephan W. Anderson, Xin Zhang, Keith A. Brown
   [https://paperswithcode.com/dataset/ixi-dataset](https://brain-development.org/ixi-dataset/)
 ##  Dictionaries and optimized sampling path 
  1. **Mean and Covariance Matrices:**
-  Final multivariate normal distributions can be downloaded through [[link](https://drive.google.com/drive/folders/1aArnrAfU8tZ0KAci09W5le4NTeI4UnUn?usp=share_link)]. After downloading the dictionaries, please put them into [ `src/GPR_dictionary/ `](src/GPR_dictionary/) folder. 
+  Final multivariate normal distributions can be downloaded through [[link](https://drive.google.com/drive/folders/1WKU47Opy2cBaGEreRuUNeDKuCDq8u8FC?usp=sharing)]. After downloading the dictionaries, please put them into [ `src/GPR_dictionary/ `](src/GPR_dictionary/) folder. 
  2. **Optimal Circular Sampling Path:**
 [optimized circular sampling path for double develop function ](https://github.com/yihonglilyxu/KspaceMRIBO/blob/963f73001bd518aa722b47a180ebd4e5283fca13/src/Undersampled-Path/f2_6822_rpattern.npy)
 ## Methods Illustration 
